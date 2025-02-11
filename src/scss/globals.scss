@@ -1,0 +1,75 @@
+@import "./variable.scss";
+
+html {
+  min-height: 100%;
+  display: flex;
+  width: 100%;
+  body {
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    #root {
+      flex-grow: 1;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.navbar {
+  //   background-color: $primary;
+  //   color: $secondary;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+  }
+  li {
+    font-size: var(--fs17);
+  }
+  button {
+    color: $primary;
+    background-color: $secondary;
+    font-size: var(--fs17);
+  }
+  //   padding: 1rem;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   .navbar-brand {
+  //     font-size: var(--fs24);
+  //   }
+  //   .navbar-nav {
+  //     display: flex;
+  //     .nav-item {
+  //       margin-left: 1rem;
+  //       a {
+  //         color: var(--white);
+  //         text-decoration: none;
+  //         &:hover {
+  //           color: var(--white);
+  //         }
+  //       }
+  //     }
+  //   }
+}
+.introsection {
+  background-image: url("/rectangle.png");
+  position: absolute;
+  right: 0%;
+  width: 60%;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}

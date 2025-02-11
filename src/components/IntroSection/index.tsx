@@ -1,7 +1,7 @@
 import React from "react";
 
 const IntroSection = () => {
-  return <div>IntroSection</div>;
+  return <div className="introsection">IntroSection</div>;
 };
 
 export default IntroSection;
