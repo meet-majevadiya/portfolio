@@ -1,25 +1,23 @@
 :root {
   --fs14: 14px;
+  --fs15: 15px;
   --fs17: 17px;
-  //   --fs18: 18px;
-  //   --fs16: 16px;
-  //   --fs20: 20px;
-  //   --fs26: 26px;
-  //   --fs32: 32px;
-  //   --app-height: 100vh;
-  //   --74px: 74px;
+  --fs20: 20px;
+  --fs50: 50px;
   //   --bs-yellow: $primary;
   //   --space20: 20px;
   //   --tabWidth: 150px;
-  // .btn-outline-primary{
-  //   --bs-btn-active-bg: #fff;
-  //   --bs-btn-active-border-color: #ffa500;
-  //   --bs-btn-active-color: #ffa500;
-  //   --bs-btn-hover-color: #fff;
-  //   --bs-btn-hover-bg: #ffa500;
-  // }
+  .btn-primary {
+    --bs-btn-active-bg: #000;
+    --bs-btn-active-border-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #000;
+    --bs-btn-hover-border-color: #fff;
+  }
 }
 
-$baseFamily: "Sora", sans-serif;
+$baseFamily: "Montserrat", sans-serif;
 $primary: #000000;
 $secondary: #ffffff;
+$light-white: #d7d7d7;
+$grey: #605e5e;

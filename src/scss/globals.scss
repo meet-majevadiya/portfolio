@@ -5,6 +5,7 @@ html {
   display: flex;
   width: 100%;
   body {
+    font-family: $baseFamily;
     flex-grow: 1;
     display: flex;
     width: 100%;
@@ -18,50 +19,37 @@ html {
   }
 }
 
-.navbar {
-  //   background-color: $primary;
-  //   color: $secondary;
+ul {
+  z-index: 9;
   display: flex;
-  justify-content: flex-end;
+  color: white;
+  list-style: none;
+  padding: 2%;
   align-items: center;
-  padding-right: 5%;
-  ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    // display: flex;
-    // justify-content: space-around;
-    // align-items: center;
-  }
-  li {
-    font-size: var(--fs17);
-  }
-  button {
-    color: $primary;
-    background-color: $secondary;
-    font-size: var(--fs17);
-  }
-  //   padding: 1rem;
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-  //   .navbar-brand {
-  //     font-size: var(--fs24);
-  //   }
-  //   .navbar-nav {
-  //     display: flex;
-  //     .nav-item {
-  //       margin-left: 1rem;
-  //       a {
-  //         color: var(--white);
-  //         text-decoration: none;
-  //         &:hover {
-  //           color: var(--white);
-  //         }
-  //       }
-  //     }
-  //   }
+  gap: 50px;
+}
+li {
+  font-size: var(--fs17);
+  font-weight: 600;
+}
+button {
+  color: $primary;
+  background-color: $secondary;
+  font-size: var(--fs17);
+}
+
+.btn-primary {
+  background-color: $secondary;
+  color: $primary;
+  font-weight: 600;
+  font-size: var(--fs14);
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.introsection-container {
+  background-color: $light-white;
+  height: 100vh;
 }
 .introsection {
   background-image: url("/rectangle.png");
@@ -70,6 +58,32 @@ html {
   width: 60%;
   background-size: cover;
   background-position: center;
-  height: 100vh;
   overflow: hidden;
+  height: inherit;
+}
+.introsection-user {
+  position: absolute;
+  right: 10%;
+  bottom: 0%;
+  z-index: 4;
+}
+.introsection-content {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+.line-1 {
+  font-size: var(--fs20);
+  font-weight: 700;
+  color: $primary;
+}
+.line-2 {
+  font-size: var(--fs50);
+  font-weight: 700;
+  color: $primary;
+}
+.line-3 {
+  font-size: var(--fs17);
+  font-weight: 700;
+  color: $grey;
 }
